@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Michael Tsvetaev](https://up.htmlacademy.ru/adaptive/13/user/284865).
-* Наставник: `Неизвестно`.
+* Студент: [Michael](https://up.htmlacademy.ru/adaptive/13/user/284865).
+* Наставник: `Без наставника`.
 
 ---
 
