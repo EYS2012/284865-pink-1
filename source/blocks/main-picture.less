@@ -1,0 +1,127 @@
+.main-picture__img {
+  background: @bg-menu url(../img/bg-back-mobile@1x.jpg) no-repeat center 40px;
+  width: 100%;
+  height: 462px;
+  margin-top: -110px;
+  object-fit: cover;
+}
+
+.main-picture__img-hand {
+  background: @bg-menu url(../img/iphone-hand-mobile@1x.png) no-repeat 0px 180px;
+  height: 462px;
+}
+
+
+@media @tablet-widths {
+  .main-picture__img {
+   background: @bg-menu url(../img/bg-back-tablet@1x.jpg) no-repeat -270px 0px;
+   width: 100%;
+   height: 728px;
+   margin-top: -110px;
+}
+}
+
+@media (min-width: 660px) {
+.main-picture__text {
+   width: 100%;
+   color: white;
+   font-weight: lighter;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   margin: 0px;
+   width: 140px;
+   font-size: 40px;
+   padding: 10px 0px;
+   line-height: 49px;
+}
+}
+
+.main-picture__text {
+  display: none;
+  margin: 0px;
+}
+
+
+
+// @media (max-width: 320px) {
+// .main-picture__img-hand {
+//   background: url(../img/iphone-hand-mobile@1x.png) no-repeat 0px 111px;
+//   height: 462px;
+// }
+// }
+
+@media @tablet-widths {
+.main-picture__img-hand {
+  background: url(../img/iphone-hand-tablet@1x.png) no-repeat -20px 0px;
+  width: 100%;
+  height: 545px;
+  margin-top: -174px;
+}
+
+.main-picture__text {
+  display: flex;
+  padding-top: 200px;
+  padding-left: 100px;
+
+}
+}
+
+@media @desktop-widths {
+.main-picture {
+  width: 100%;
+  height: 100%;
+
+}
+
+  .main-picture__img {
+  background: url(../img/bg-back-desktop@1x.jpg) no-repeat 50% 0px;
+  width: 100%;
+   background-size: cover;
+  min-width: 960px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+.main-picture__img-hand {
+  background: url(../img/iphone-hand-desktop@1x.png) no-repeat 24px;
+  width: 940px;
+  margin-top: -199px;
+  height: 646px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+ .main-picture__text {
+  display: flex;
+  padding-top: 219px;
+  font-size: 48px;
+  line-height: 60px;
+  margin-left: auto;
+  width: 243px;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 645px;
+  letter-spacing: 1.3px;
+}
+}
+
+@media (min-width: 1200px) and (max-width: 100%) {
+.main-picture__img {
+  background: url(../img/bg-back-desktop@1x.jpg) no-repeat -680px 0px;
+  width: 100%;
+  background-size: cover;
+  height: auto;
+
+
+}
+}
+

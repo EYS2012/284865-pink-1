@@ -1,0 +1,130 @@
+
+.rewiew {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.rewiew__section {
+  display: none;
+}
+
+
+@media @tablet-widths {
+.rewiew__section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.rewiew {
+  margin-bottom: 30px;
+}
+}
+
+@media @tablet-widths {
+.rewiew__section::before {
+  content: "";
+  background: url("../img/icon-timer.svg") no-repeat 0px 0px;
+   width: 250px;
+   height: 280px;
+    top: 58px;
+    left: 16px;
+  position: absolute;
+
+}
+}
+
+@media @tablet-widths {
+.rewiew__section::after {
+  content: "";
+  background: white;
+    color: #d22856;
+    position: absolute;
+   width: 175px;
+   height: 175px;
+   border-radius: 50%;
+   border: solid #d22856 15px;
+  top:113px;
+  left: 37px;
+
+}
+}
+
+
+@media @tablet-widths {
+.rewiew__section h3 {
+  font-size: 30px;
+  width: 170px;
+   margin-top: 34px;
+   padding-left: 167px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+font-weight: 550;
+line-height: 37px;
+padding-bottom: 10px;
+}
+}
+
+@media @tablet-widths {
+.rewiew__text {
+  width: 310px;
+  display: flex;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: -30px;
+  line-height: 25px;
+  padding-left: 310px;
+  // position: relative;
+}
+}
+
+
+@media @tablet-widths {
+.rewiew__text::before {
+  color: #d22856;
+  position: absolute;
+  content:"24";
+  font-size: 97px;
+  top: 192px;
+  left: 87px;
+  // width: 100px;
+  // height: 70px;
+  z-index: 10;
+  font-weight: bold;
+  font-family: "Open Sans";
+}
+}
+
+@media @tablet-widths {
+.rewiew__link {
+width: 310px;
+padding-top: 8px;
+color:#d22856;
+}
+}
+
+@media @desktop-widths {
+.rewiew__container {
+width: 940px;
+  padding: 0px 10px;
+  margin-left: auto;
+  margin-right: auto;
+ display: flex;
+// background: #f2f2f2;
+  align-items: center;
+  justify-content: center;
+  // flex-direction: row;
+
+}
+}
