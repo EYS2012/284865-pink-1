@@ -27,8 +27,8 @@
     "Firefox ESR"
   ],
   "editorconfig-cli": [
-    "*.json",
-    "*.js",
+    "source/*.json",
+    "source/*.js",
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",

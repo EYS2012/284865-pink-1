@@ -1,0 +1,385 @@
+.competition-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.competition-form__name {
+  width: 280px;
+  align-items: center;
+  padding: 15px 20px;
+  padding-bottom: 5px;
+
+}
+
+.competition-form__name:nth-child(3) {
+  padding-bottom: 42px;
+}
+
+
+
+.competition-form__name input {
+  padding: 18px 0px;
+  font-size: 18px;
+  color:@text-color;
+  padding-left: 20px;
+  width: 258px;
+  letter-spacing: 0.6px;
+}
+
+.competition-form__name label {
+  margin-bottom: 12px;
+  color: @pink-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 280px;
+  padding-left: 25px;
+  justify-content: left;
+  display: flex;
+}
+
+.competition-form__checkboxes {
+  background: @bg-grey;
+  // width: 320px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.competition-form__checkboxes li,
+.competition-form__radio-block li {
+  color:#28363f;
+  padding-top: 25px;
+  padding-bottom: 32px;
+  list-style-type: none;
+}
+
+.competition-form__radio-block label,
+.competition-form__checkbox-item label {
+  cursor: pointer;
+  color:#28363f;
+}
+
+.competition-form__checkbox-item {
+// .competition-form__radio-item {
+  padding-left: 70px;
+  text-align: left;
+}
+
+
+.competition-form__radio-block {
+  background: @bg-grey;
+  list-style-type: none;
+  padding-bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.competition-form__radio-block li {
+  list-style-type: none;
+}
+
+
+
+.competition-form__checkboxes-title {
+  color: @pink-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 240px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.competition-form__checkbox-filter {
+  position: relative;//отвечает за квадраты
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.competition-form__radio-item input,
+.competition-form__checkbox-item input {
+  display: none;
+
+}
+
+
+
+.competition-form__checkbox-item input[type="checkbox"]:checked ~ label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  // color: #cb2855;
+  background: white;
+  background: url("../img/icon-yes-checkbox.svg") no-repeat;
+  left:27px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.competition-form__checkbox-filter :nth-child(1) {
+  padding-top: 17px;
+
+}
+
+
+
+.competition-form__checkbox-filter :nth-child(1)::after {
+ position: absolute;
+ content: "";
+ top: 10px;
+ left: 20px;
+ width: 35px;
+ height: 35px;
+ background: white;
+ border:2px solid #e6e6e6;
+
+}
+
+.competition-form__checkbox-filter :nth-child(2)::after {
+  position: absolute;
+  content: "";
+  top: 92px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border:2px solid #e6e6e6;
+
+}
+
+.competition-form__checkbox-filter :nth-child(3)::after {
+  position: absolute;
+  content: "";
+  top: 174px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border:2px solid #e6e6e6;
+
+}
+
+.competition-form__checkbox-filter :nth-child(4)::after {
+  position: absolute;
+  content: "";
+  top: 257px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border:2px solid #e6e6e6;
+
+}
+
+.competition-form__checkbox-filter :nth-child(5)::after {
+    position: absolute;
+    content: "";
+    top: 337px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border:2px solid #e6e6e6;
+
+}
+
+.competition-form__checkbox-filter :nth-child(6)::after {
+  position: absolute;
+  content: "";
+  top: 420px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border:2px solid #e6e6e6;
+
+}
+
+.competition-form__emotion-wrapper {
+  padding-top: 13px;
+  // padding-bottom: 20px;
+}
+
+.competition-form__form-item-wrapper {
+  padding-top: 23px;
+  padding-bottom: 32px;
+}
+
+.competition-form__emotion-wrapper textarea {
+  height: 164px;
+  border: 2px solid #e5e5e5;
+  padding: 18px 10px;
+  font-size: 18px;
+  color:@text-color;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-align: left;
+  width: 250px;
+  line-height: 30px;
+  margin-bottom: 45px;
+}
+
+.competition-form__radio-block-title {
+  color: @pink-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 240px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.competition-form__emotion-wrapper label {
+  color: @pink-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.competition-form__emotion-wrapper placeholder {
+  padding: 18px 0px;
+  font-size: 18px;
+  color:@text-color;
+  padding-left: 20px;
+  width: 258px;
+  letter-spacing: 0.6px;
+  font-family: "Open Sans";
+}
+
+
+.competition-form__radio-item {
+  // position: relative;
+  text-align: left;
+  font-size: 18px;
+  color: @text-color;
+}
+
+.competition-form__explanation {
+  color: @text-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 240px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.competition-form__radio-filter :nth-child(1)::after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+    border:2px solid #e6e6e6;
+}
+
+.competition-form__radio-filter :nth-child(2)::after {
+    position: absolute;
+    content: "";
+    top: 96px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+    border:2px solid #e6e6e6;
+}
+
+.competition-form__radio-filter :nth-child(3)::after {
+    position: absolute;
+    content: "";
+    top: 171px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+    border:2px solid #e6e6e6;
+}
+
+.competition-form__radio-filter :nth-child(1) {
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.competition-form__radio-filter :nth-child(2) {
+  padding-top: 21px;
+}
+
+.competition-form__radio-filter :nth-child(3) {
+  padding-top: 19px;
+  cursor: pointer;
+}
+
+.competition-form__radio-filter {
+  position: relative;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.competition-form__radio-item input[type="radio"]:checked ~ label::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: @pink-color;
+  // #cb2855
+  // background: url("../img/icon-map-marker.svg") no-repeat;
+  border-radius: 50%;
+  left:-58px;
+  z-index: 300;
+  cursor: pointer;
+
+}
+
+.competition-form__send-btn {
+  padding: 21px 52px;
+  background: #2aab6d;
+  color:white;
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0px;
+  letter-spacing: 0.7px;
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+
+
