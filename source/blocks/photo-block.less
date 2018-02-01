@@ -23,13 +23,30 @@
   padding-top: 28px;
 }
 
+@media @tablet-widths {
+  .photo-block__text {
+    width: 100%;
+    font-size: 18px;
+    padding-top: 45px;
+    padding-bottom: 54px;
+  }
+}
+
+@media @desktop-widths {
+  .photo-block__text {
+    padding-bottom: 44px;
+  }
+}
+
 .photo-block__photo {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 .photo-block__photo img {
+  background: grey;
   object-fit: cover;
 }
 
@@ -37,6 +54,7 @@
   .photo-block__img {
     width:300px;
     height:300px;
+    background: grey;
   }
 }
 
@@ -44,6 +62,7 @@
   .photo-block__img {
     width:300px;
     height:400px;
+    background: grey;
   }
 }
 
@@ -59,12 +78,80 @@
 @media @tablet-widths {
   .photo-block__item {
     width: 300px;
+    margin-top: 50px;
     padding-left: 20px;
+  }
+
+  .photo-block__item:nth-child(1),
+  .photo-block__item:nth-child(3),
+  .photo-block__item:nth-child(5) {
+    padding-left: 0px;
+  }
+
+  .photo-block__item:nth-child(1) .signature__like {
+    padding-top: 10px;
+    margin-bottom: 3px;
+  }
+
+  .photo-block__item:nth-child(3) .signature__like {
+    padding-top: 10px;
+    margin-bottom: 3px;
+  }
+
+  .photo-block__item:nth-child(3) .signature__like::before {
+    top: 10px;
+  }
+
+  .photo-block__item:nth-child(2) .signature__wrapper,
+  .photo-block__item:nth-child(4) .signature__wrapper {
+    padding-bottom: 20px;
+  }
+
+  .photo-block__item:nth-child(1) .signature__like::before {
+    top: 10px;
+    left: 225px;
+  }
+
+  .photo-block__item:nth-child(3),
+  .photo-block__item:nth-child(4),
+  .photo-block__item:nth-child(5),
+  .photo-block__item:nth-child(6) {
+      margin-top: 20px;
   }
 }
 
+@media @desktop-widths {
+  .photo-block__item:nth-child(3) {
+    margin-top: 50px;
+  }
+  .photo-block__item:nth-child(4),
+  .photo-block__item:nth-child(5),
+  .photo-block__item:nth-child(6) {
+      margin-top: 50px;
+  }
 
-.photo-block__item:nth-child(2) .signature__wrapper {
-  padding-bottom: 27px;
+  .photo-block__item:nth-child(2),
+  .photo-block__item:nth-child(4) {
+    padding-right: 20px;
+  }
+
+  .photo-block__item:nth-child(4) {
+    padding-left: 0px;
+  }
 }
 
+@media @tablet-widths {
+  .photo-block__wrap {
+    display: flex;
+    width: 620px;
+    flex-wrap: wrap;
+  }
+}
+
+@media @desktop-widths {
+  .photo-block__wrap {
+    display: flex;
+    width: 940px;
+    flex-wrap: wrap;
+  }
+}

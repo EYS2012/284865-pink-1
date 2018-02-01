@@ -3,18 +3,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+@media @desktop-widths {
+  .photo-block-main {
+    flex-direction: row;
+    // width: 1200px;
+    // margin: 0 auto;
+    // position: relative;
+  }
 }
 
 .photo-block-main__title {
   position: absolute;
   content: "Панорама дня";
-  top:0px;
+  top: 0px;
   right: 20px;
   color:white;
   text-transform: uppercase;
   font-size: 12px;
-  background: #d22856;
+  background: @pink-color;
   font-weight: normal;
   margin: 0px;
   padding: 10px 22px;
@@ -24,6 +32,12 @@
   .photo-block-main__title {
     top: 57px;
     right: 20px;
+  }
+}
+
+@media @desktop-widths {
+  .photo-block-main__title {
+    display: none;
   }
 }
 
@@ -38,7 +52,7 @@
   .photo-block-main__img {
     width: 1200px;
     height: 506px;
-
+    overflow-x: hidden;
   }
 }
 
@@ -50,5 +64,14 @@
 @media @tablet-widths {
   .photo-block-main__photo {
     width: 660px;
+  }
+}
+
+@media @desktop-widths {
+  .photo-block-main__photo {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
   }
 }
