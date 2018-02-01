@@ -7,16 +7,47 @@
   margin-top: -110px;
 }
 
+@media @tablet-widths {
+  .form-photo {
+    background: @bg-menu url(../img/bg-back-tablet@1x.jpg) no-repeat center 0px;
+    height: 440px;
+  }
+}
+@media @desktop-widths {
+  .form-photo {
+    background: @bg-menu url(../img/bg-back-desktop@1x.jpg) no-repeat center 0px;
+    height: 395px;
+    object-fit: cover;
+  }
+}
+
 .form-photo__text {
-   margin: 0px;
-  // width: 240px;
+  margin: 0px;
   font-weight: lighter;
   font-size: 23px;
-  padding-top: 125px;
+  padding-top: 140px;
   padding-left:40px;
   padding-right: 40px;
   padding-bottom: 53px;
   line-height: 29px;
   word-spacing: 5px;
   text-align: center;
+}
+
+@media @tablet-widths {
+  .form-photo__text {
+    padding-top: 180px;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 1px;
+  }
+}
+
+@media @desktop-widths {
+  .form-photo__text {
+    padding-top: 170px;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 1px;
+  }
 }

@@ -51,77 +51,92 @@
     </div>
     <div class="wrap-form">
       <p class="wrap-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+      <p class="wrap-form__text wrap-form__add">Пожалуйста, заполните форму ниже:</p>
       <form class="competition-form" action="http://echo.htmlacademy.ru" method="post">
-        <div class="competition-form__name">
-          <label for="surname">Фамилия:</label>
-          <input type="text" id="surname" name="surname" size="30" placeholder="Укажите фамилию *" required>
-        </div>
-        <div class="competition-form__name">
-          <label for="first-name">Имя:</label>
-          <input type="text" id="first-name" name="surname" size="30" placeholder="Введите ваше имя *" required>
-        </div>
-        <div class="competition-form__name">
-          <label for="patronymic">Отчество:</label>
-          <input type="text" id="patronymic" name="patronymic" size="30" placeholder="Ну и отчество тоже" required>
-        </div>
-        <div class="competition-form__checkboxes">
-          <h3 class="competition-form__checkboxes-title">Ваши безбашенные достижения в путешествии</h3>
-          <ul class="competition-form__checkbox-filter">
-            <li class="competition-form__checkbox-item"><input type="checkbox" name="option1" id="filter1" checked>
-              <label for="filter1">Сделал селфи с акулой</label>
-            </li>
-            <li class="competition-form__checkbox-item"><input type="checkbox" name="option2" id="filter2" checked>
-              <label for="filter2">Обгорел на пляже</label>
-            </li>
-            <li class="competition-form__checkbox-item"><input type="checkbox" name="option3" id="filter3">
-              <label for="filter3">Видел Чака Норриса</label>
-            </li>
-            <li class="competition-form__checkbox-item"><input type="checkbox" name="option4" id="filter4">
-              <label for="filter4">Накупил сувениров</label>
-            </li>
-            <li class="competition-form__checkbox-item"><input type="checkbox" name="option5" id="filter5" checked>
-              <label for="filter5">Удержал башню</label>
-            </li>
-            <li class="competition-form__checkbox-item"><input type="checkbox" name="option6" id="filter6">
-              <label for="filter6">Разгромил отель</label>
-            </li>
-          </ul>
-        </div>
-        <div class="competition-form__form-item-wrapper">
+        <div class="competition-form__name-wrapper">
           <div class="competition-form__name">
-            <label for="tel">Номер телефона</label>
-            <input type="text" id="tel" name="telephone" size="30" placeholder="Номер, пожалуйста">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" size="30" placeholder="Укажите фамилию *" required>
           </div>
           <div class="competition-form__name">
-            <label for="post">Адрес почты</label>
-            <input type="text" id="post" name="post-mail" size="30" placeholder="Введите почту *" required>
+            <label for="first-name">Имя:</label>
+            <input type="text" id="first-name" name="surname" size="30" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="competition-form__name">
+            <label for="patronymic">Отчество:</label>
+            <input type="text" id="patronymic" name="patronymic" size="30" placeholder="Ну и отчество тоже" required>
           </div>
         </div>
-        <div class="competition-form__radio-block">
-          <h3 class="competition-form__radio-block-title">С каким приложением путешествовали?</h3>
-          <ul class="competition-form__radio-filter">
-            <li class="competition-form__radio-item">
-              <input type="radio" name="option" id="iOS" checked>
-              <label for="iOS">Pink для iOS</label>
-            </li>
-            <li class="competition-form__radio-item">
-              <input type="radio" name="option" id="Android">
-              <label for="Android">Pink для Android</label>
-            </li>
-            <li class="competition-form__radio-item">
-              <input type="radio" name="option" id="Windows-Phone">
-              <label for="Windows-Phone">Windows Phone</label>
-            </li>
-          </ul>
+        <div class="competition-form__reverse-wrapper">
+          <div class="competition-form__checkboxes">
+            <fieldset>
+            <legend class="competition-form__checkboxes-title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="competition-form__checkbox-filter">
+              <li class="competition-form__checkbox-item"><input type="checkbox" name="option1" id="filter1" checked>
+                <label for="filter1">Сделал селфи с акулой</label>
+              </li>
+              <li class="competition-form__checkbox-item"><input type="checkbox" name="option2" id="filter2" checked>
+                <label for="filter2">Обгорел на пляже</label>
+              </li>
+              <li class="competition-form__checkbox-item"><input type="checkbox" name="option3" id="filter3">
+                <label for="filter3">Видел Чака Норриса</label>
+              </li>
+              <li class="competition-form__checkbox-item"><input type="checkbox" name="option4" id="filter4">
+                <label for="filter4">Накупил сувениров</label>
+              </li>
+              <li class="competition-form__checkbox-item"><input type="checkbox" name="option5" id="filter5" checked>
+                <label for="filter5">Удержал башню</label>
+              </li>
+              <li class="competition-form__checkbox-item"><input type="checkbox" name="option6" id="filter6">
+                <label for="filter6">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          </div>
+          <div class="competition-form__form-item-wrapper">
+            <fieldset class="competition-form__fieldset">
+              <legend class="competition-form_phone-legend competition-form__radio-block-title">Контактная информация</legend>
+              <div class="competition-form__phone">
+                <label class="competition-form__phone-label" for="tel">Номер телефона</label>
+                <input class="competition-form__phone-input" type="text" id="tel" name="telephone" size="30" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="competition-form__mail">
+                <label class="competition-form__mail-label" for="post">Адрес почты</label>
+                <input class="competition-form__phone-input" type="text" id="post" name="post-mail" size="30" placeholder="Введите почту *" required>
+              </div>
+            </fieldset>
+          </div>
+          <div class="competition-form__radio-block">
+            <fieldset>
+              <legend class="competition-form__radio-block-title">С каким приложением путешествовали?</legend>
+              <ul class="competition-form__radio-filter">
+                <li class="competition-form__radio-item">
+                  <input type="radio" name="option" id="iOS" checked>
+                  <label class="competition-form__ios" for="iOS">Pink для iOS</label>
+                </li>
+                <li class="competition-form__radio-item">
+                  <input type="radio" name="option" id="Android">
+                  <label class="competition-form__android" for="Android">Pink для Android</label>
+                </li>
+                <li class="competition-form__radio-item">
+                  <input type="radio" name="option" id="Windows-Phone">
+                  <label class="competition-form__Windows-Phone" for="Windows-Phone">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
         </div>
-        <div class="competition-form__emotion-wrapper">
-          <label for="letter">Опишите свои эмоции</label>
-          <textarea id="letter" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
-        <div class="competition-form__submit">
-          <button type="submit" class="competition-form__send-btn">Отправить форму</button>
-        </div>
-        <span class="competition-form__explanation">* &mdash; Обязательные поля
+          <div class="competition-form__emotion-wrapper">
+            <fieldset>
+              <legend class="competition-form__radio-block-title">Опишите свои эмоции</legend>
+                <label for="letter">Опишите свои эмоции</label>
+                <textarea id="letter" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+          </div>
+          <div class="competition-form__submit">
+            <button type="submit" class="competition-form__send-btn">Отправить форму</button>
+          </div>
+          <span class="competition-form__explanation">* &mdash; Обязательные поля
           </span>
       </form>
     </div>

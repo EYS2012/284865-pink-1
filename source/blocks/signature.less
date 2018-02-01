@@ -16,9 +16,8 @@
 @media @tablet-widths {
   .signature__wrapper {
     padding-left: 30px;
-    padding-top: 30px;
+    padding-top: 25px;
     position: relative;
-    height: 140px;
     padding-bottom: 25px;
     padding-right: 10px;
   }
@@ -69,11 +68,12 @@
   .signatbure__wrapper--first .signature__like {
     position: absolute;
     top: 28px;
-    left: 440px;
+    left: 473px;
     content: "";
-    width:70px;
+    width: 100px;
     height:20px;
     z-index: 30;
+    padding-top: 0px;
   }
 
   .signatbure__wrapper--first .signature__like::before {
@@ -82,7 +82,8 @@
     width: 20px;
     height: 20px;
     background: url("../img/icon-heart.svg") no-repeat;
-    left: 135px;
+    left: 106px;
+    top: 0px;
   }
 
   .signatbure__wrapper--first .signature__text {
@@ -90,13 +91,44 @@
   }
 
   .signatbure__wrapper--first {
-   width: 590px;
-}
+   width: 580px;
+  }
 
   .signature__like {
-  padding-top: 70px;
+  padding-top: 35px;
   display: flex;
+  padding-left: 0px;
+  margin-bottom: 8px;
+  }
 
+  .signature__like::before {
+    top: 35px;
+    left: 225px;
+  }
+
+  .signature__like::before:nth-child(1) {
+    top: 40px;
+  }
 }
 
+@media @desktop-widths {
+  .signatbure__wrapper--first {
+    width: 900px;
+    position: relative;
+  }
+}
+@media @desktop-widths {
+  .signatbure__wrapper--first::before {
+    position: absolute;
+    content: "ПAНОРАМА ДНЯ";
+    color: white;
+    font-size: 12px;
+    padding: 10px 20px;
+    background: @pink-color;
+    top: -452px;
+    left: 802px;
+    z-index: 30;
+    // width: 140px;
+    // height: 30px;
+  }
 }
