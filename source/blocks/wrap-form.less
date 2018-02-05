@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.wrap-form__add {
+.wrap-form__text span {
   display: none;
 }
 
@@ -23,22 +23,35 @@
   .wrap-form__text {
     font-size: 18px;
     line-height: 29px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 75px;
     padding-bottom: 0px;
     font-weight: 400;
     margin-bottom: 0px;
   }
 
-  .wrap-form__add {
+  .wrap-form__text span {
     display: block;
-    padding-left: 60px;
-    padding-right: 50px;
-    padding-top: 0px;
     padding-bottom: 60px;
-    font-weight: 400;
-    margin: 0px;
+  }
+}
 
+@media @desktop-widths {
+  .wrap-form__text {
+    padding-left: 90px;
+    padding-right: 90px;
+    position: relative;
+    padding-bottom: 70px;
+    width: 780px;
+    margin: 0 auto;
+    padding-top: 92px;
+  }
+
+  .wrap-form__text span {
+    display: inline;
+  }
+  .wrap-form {
+    width: 100%;
   }
 }
