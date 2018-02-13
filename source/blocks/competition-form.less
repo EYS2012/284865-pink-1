@@ -1,5 +1,4 @@
 .competition-form {
-  // display: flex;
   flex-direction: column;
   width: 100%;
   flex-wrap: wrap;
@@ -14,19 +13,20 @@
   margin: 0 auto;
 }
 
+
+
 @media @tablet-widths {
   .competition-form {
     flex-direction: row;
     justify-content: center;
-    // display: flex;
   }
+
 }
 
 @media @desktop-widths {
   .competition-form {
     flex-wrap: wrap;
     flex-direction: column;
-    // display: flex;
     align-items: stretch;
     width: 940px;
     margin: 0px auto;
@@ -38,7 +38,7 @@
 }
 
 .competition-form__name:nth-child(3) {
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 
 .competition-form__phone-legend,
@@ -168,8 +168,64 @@
     border: 2px solid #e5e5e5;
     border-right: 60px solid #e5e5e5;
     padding-right: 160px;
+    position: relative;
+  }
+
+  .competition-form__phone {
+    position: relative;
+  }
+  .competition-form__phone::after {
+    position: absolute;
+    content:"";
+    background: url("../img/icon-phone.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    left: 510px;
+    z-index: 2;
+  }
+
+  .competition-form__mail {
+    position: relative;
+  }
+
+  .competition-form__mail::after {
+    position: absolute;
+    content:"";
+    background: url("../img/icon-mail.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    left: 510px;
+    z-index: 2;
+  }
+
+
+  .competition-form__phone-input:hover,
+  .competition-form_mail-input:hover {
+    border: 2px solid black;
+    padding: 15px 20px;
+    padding-bottom: 5px;
+    padding: 18px 0px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-right: 60px solid #e5e5e5;
+    padding-right: 160px;
+  }
+
+  .competition-form__phone-input:active,
+  .competition-form_mail input:active {
+    border: 2px solid @pink-color;
+    padding: 15px 20px;
+    padding-bottom: 5px;
+    padding: 18px 0px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-right: 60px solid #e5e5e5;
+    padding-right: 160px;
 
   }
+
 
   .competition-form__phone label,
   .competition-form__mail label {
@@ -197,7 +253,6 @@
     display: flex;
     flex-direction: column-reverse;
   }
-
 }
 
 @media @desktop-widths {
@@ -283,7 +338,13 @@
   }
 }
 
-.competition-form__checkboxes li,
+.competition-form__checkboxes li {
+  color:#28363f;
+  padding-top: 0px;
+  padding-bottom: 58px;
+  list-style-type: none;
+}
+
 .competition-form__radio-block li {
   color:#28363f;
   padding-top: 25px;
@@ -356,6 +417,33 @@ fieldset {
     border: 2px solid #e5e5e5;
   }
 
+  .competition-form__phone-input:hover,
+  .competition-form_mail-input:hover {
+    border: 2px solid black;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 20px;
+    padding-bottom: 5px;
+    padding: 18px 0px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-right: 60px solid #e5e5e5;
+    padding-right: 35px;
+  }
+
+  .competition-form__phone-input:active,
+  .competition-form_mail-input:active {
+    align-items: center;
+    padding: 15px 20px;
+    padding-bottom: 5px;
+    padding: 18px 0px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-right: 60px solid #e5e5e5;
+    padding-right: 35px;
+    border: 2px solid @pink-color;
+  }
 
   .competition-form__fieldset {
     margin-top: 5px;
@@ -371,10 +459,10 @@ fieldset {
   text-transform: uppercase;
   font-size: 14px;
   padding-bottom: 25px;
-  font-weight: lighter;
+  font-weight: 400;
   display: flex;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 35px;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
@@ -568,10 +656,30 @@ fieldset {
     left: 65px;
     z-index: 100;
     cursor: pointer;
+  }
 
+  .competition-form__phone {
+    position: relative;
+  }
+
+  .competition-form__phone::after {
+    top: 22px;
+    left: 355px;
+  }
+
+  .competition-form__mail {
+    position: relative;
+  }
+
+  .competition-form__mail::after {
+    top: 40px;
+    left: 382px;
   }
 
   .competition-form__checkboxes li {
+    color:#28363f;
+    padding-bottom: 32px;
+    list-style-type: none;
     padding-top: 3px;
   }
 
@@ -615,6 +723,7 @@ fieldset {
   .competition-form__checkboxes-title {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 25px;
   }
 
   .competition-form__checkbox-one-label::after {
@@ -1100,3 +1209,4 @@ input:hover {
 input:active {
   border: 2px solid @pink-color;
 }
+

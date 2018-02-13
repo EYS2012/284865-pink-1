@@ -18,9 +18,9 @@
 .slogan {
   padding-top: 17px;
   margin-bottom: 0px;
-  width: 620px;
-  padding-left: 20px;
-  padding-right: 20px;
+  // width: 620px;
+  // padding-left: 20px;
+  // padding-right: 20px;
    width: 100%;
 
 }
@@ -59,10 +59,14 @@
 }
 
 @media @tablet-widths {
-.slogan__promo-text {
-  padding-bottom: 0px;
-
-}
+  .slogan__promo-text {
+    padding-bottom: 0px;
+    padding-top: 10px;
+    width: 620px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .slogan__promo-text :nth-child(1) {
@@ -105,29 +109,17 @@
 position: relative;
 }
 
-// .slogan::after {
-//   content: "";
-//   background-image: url("../img/bg-triangle-white.svg");
-//    background-color: red;
-//   padding-left: 0px;
-//    display: flex;
-//   align-items: center;
-//   height: 65px;
-//   background-position-x: -2px;
-//   width: 100%;
-// display: none;
-// }
-
 
 .slogan__promo-text {
   padding-top: 50px;
   padding-bottom: 48px;
   font-weight: lighter;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
-  padding-right: 10px;
+  padding-right: 0px;
   font-size: 55px;
   margin-bottom: 0px;
+  width: auto;
 }
 
 .slogan__promo-text :nth-child(1) {
