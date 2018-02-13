@@ -12,6 +12,10 @@
 
 }
 
+.page-header__logotablet {
+  display: none;
+}
+
 .page-header__transparent { // 1положение
   background: rgba(0,0,0,0.3);
   width: 100%;
@@ -27,22 +31,53 @@
   display: none;
 }
 
-@media(max-width:659px) {
  .page-header__logomobile {
    display: block;
-   color:white;
+   fill:#ffffff;
    margin: 0px;
    padding-left: 20px;
    padding-top: 23px;
-   padding-bottom:23px;
+   padding-bottom: 23px;
    display: flex;
    position: relative;
   }
-}
+
+  .page-header__logomobile:hover {
+    fill: #d22856;
+  }
+
+
+  .page-header__logomobile:active {
+    fill: #FFFFFF;
+    fill-opacity: 0.3;
+  }
+
+  // .page-header__logodesktop {
+  //   display: none;
+  // }
 
 @media @tablet-widths {
+  .page-header__logomobile {
+    display: none;
+  }
+
+  .page-header__logotablet {
+    display: block;
+    padding-left: 20px;
+    margin-top: -15px;
+    fill: #ffffff;
+  }
+
+  .page-header__logotablet:hover {
+    fill: #d22856;
+}
+  .page-header__logotablet:active {
+    fill: #FFFFFF;
+    fill-opacity: 0.3;
+}
+
   .page-header__control-panel {
-    background: @bg-menu url("../img/logo-pink-blue-tablet.svg") no-repeat 20px 30px;
+    background: @bg-menu;
     width: 100%;
   }
 
@@ -66,7 +101,7 @@
   }
 
   .page-header__transparent { // 1положение
-    background: rgba(0,0,0,0.3) url("../img/logo-pink-blue-tablet.svg") no-repeat 20px 30px;
+    background: rgba(0,0,0,0.3);
     padding-bottom: 45px;
     width: 100%;
     height: 20px;
@@ -76,15 +111,13 @@
   }
 
   .page-header__logo {
-    // background-image: url("../img/logo-pink-blue-tablet.svg") no-repeat 20px 30px;
-  background: @bg-menu;
-  text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 0px;
-  color: white;
-  border-bottom: 1px solid black;
-  width: 150px;
-  cursor: pointer;
+    background: transparent;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    color: white;
+    width: 150px;
+    cursor: pointer;
   }
 
   .page-header__container {
@@ -298,7 +331,21 @@ button {
   display: none;
 }
 
-  .page-header__control-panel {
+// .page-header__logodesktop {
+//   display: block;
+//   fill: #FFFFFF;
+// }
+
+// .page-header__logodesktop:hover {
+//   fill: #d22856;
+// }
+
+// .page-header__logodesktop:active {
+//    fill: #FFFFFF;
+//   fill-opacity: 0.3;
+// }
+
+.page-header__control-panel {
     padding-bottom: 45px;
     padding-top: 45px;
     background: rgba(0,0,0,0.3);
@@ -334,7 +381,7 @@ button {
     background-color: transparent;
     width: 150px;
     height: 52px;
-    top:23%;
+    top:25%;
     cursor: pointer;
 }
 
@@ -345,7 +392,7 @@ button {
     background: url(../img/logo-pink-hover-desktop.svg) no-repeat 10% 0px;
     width: 150px;
     height: 50px;
-    top:23%;
+    top:25%;
   }
 
   .page-header__logo:active {
@@ -355,7 +402,12 @@ button {
     background: url(../img/logo-pink-active-desktop.svg) no-repeat 10% 0px;
     width: 150px;
     height: 50px;
-    top:23%;
+    top:25%;
+  }
+
+  .page-header__logotablet,
+  .page-header__logomobile {
+    display: none;
   }
 }
 

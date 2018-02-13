@@ -193,15 +193,12 @@
   padding-right: 10px;
 }
 
-@media @tablet-widths {
-  .preprocessing__icon--crop {
-    padding-right: 20px;
-  }
-}
+
 
 @media @desktop-widths {
   .preprocessing__icon--crop {
     margin-left: 15px;
+    transform: scale(1);
   }
   .preprocessing__scale-active::after {
     left: 75px;
@@ -231,6 +228,7 @@
   background: url("../img/icon-color.svg") no-repeat 0px 0px;
   width:  48px;
   height: 48px;
+
 }
 
 .preprocessing__icon--color:hover {
@@ -245,16 +243,41 @@
   height: 48px;
 }
 
+@media @tablet-widths {
+  .preprocessing__icon--crop {
+    padding-right: 20px;
+
+    transform: scale(0.7);
+  }
+  .preprocessing__icon--color {
+    background: url("../img/icon-color-active.svg") no-repeat 0px 0px;
+    width: 48px;
+    height: 48px;
+    transform: scale(0.7);
+  }
+  .preprocessing__icon--contrast {
+    background: url("../img/icon-editor-contrast-pink.svg") no-repeat 0px 0px;
+    width: 32px;
+    height: 32px;
+    transform: scale(0.7);
+  }
+}
+
 @media @desktop-widths {
   .preprocessing__icon--color {
     background: url("../img/icon-color-active.svg") no-repeat 0px 0px;
     margin-left: 18px;
+    transform: scale(1);
   }
 
   .preprocessing__icon--contrast {
     background: url("../img/icon-editor-contrast-pink.svg") no-repeat 0px 0px;
     margin-left: 22px;
     margin-top: 0px;
+    transform: scale(1);
+  }
+  .preprocessing__icon--crop {
+    transform: scale(1);
   }
 }
 
