@@ -76,6 +76,12 @@
     padding-top: 0px;
   }
 
+@media @desktop-widths {
+  .signatbure__wrapper--first .signature__like {
+    right: 48px;
+    left: auto;
+  }
+}
   .signatbure__wrapper--first .signature__like::before {
     position: absolute;
     content:"";
@@ -117,6 +123,7 @@
     position: relative;
   }
 }
+
 @media @desktop-widths {
   .signatbure__wrapper--first::before {
     position: absolute;
@@ -128,7 +135,5 @@
     top: -452px;
     left: 802px;
     z-index: 30;
-    // width: 140px;
-    // height: 30px;
   }
 }
