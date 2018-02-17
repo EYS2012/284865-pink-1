@@ -1,0 +1,139 @@
+.signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signature__wrapper {
+  background: @bg-grey;
+  text-align: left;
+  padding-left: 20px;
+  width: 260px;
+  padding-bottom: 26px;
+  padding-top: 20px;
+}
+
+@media @tablet-widths {
+  .signature__wrapper {
+    padding-left: 30px;
+    padding-top: 25px;
+    position: relative;
+    padding-bottom: 25px;
+    padding-right: 10px;
+  }
+}
+
+.signature__name-bold {
+  font-weight: bold;
+}
+
+.signature__time {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #949aa1;
+}
+
+.signature__text {
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 25px;
+  margin-top: 0px;
+  color: @text-color;
+  margin-bottom: 13px;
+}
+
+.signature__like {
+  color: @pink-color;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 30px;
+  position: relative;
+  line-height: 12px;
+  padding-top: 4px;
+  display: flex;
+
+}
+
+.signature__like::before {
+  position: absolute;
+  content:"";
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-heart.svg") no-repeat;
+  top: 2px;
+  left: 0px;
+}
+
+@media @tablet-widths {
+  .signatbure__wrapper--first .signature__like {
+    position: absolute;
+    top: 28px;
+    left: 473px;
+    content: "";
+    width: 100px;
+    height:20px;
+    z-index: 30;
+    padding-top: 0px;
+  }
+
+@media @desktop-widths {
+  .signatbure__wrapper--first .signature__like {
+    right: 48px;
+    left: auto;
+  }
+}
+  .signatbure__wrapper--first .signature__like::before {
+    position: absolute;
+    content:"";
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    left: 106px;
+    top: 0px;
+  }
+
+  .signatbure__wrapper--first .signature__text {
+    margin-bottom: 0px;
+  }
+
+  .signatbure__wrapper--first {
+    width: 580px;
+  }
+
+  .signature__like {
+  padding-top: 35px;
+  display: flex;
+  padding-left: 0px;
+  margin-bottom: 8px;
+  }
+
+  .signature__like::before {
+    top: 35px;
+    left: 225px;
+  }
+
+  .signature__like::before:nth-child(1) {
+    top: 40px;
+  }
+}
+
+@media @desktop-widths {
+  .signatbure__wrapper--first {
+    width: 900px;
+    position: relative;
+  }
+}
+
+@media @desktop-widths {
+  .signatbure__wrapper--first::before {
+    position: absolute;
+    content: "ПAНОРАМА ДНЯ";
+    color: white;
+    font-size: 12px;
+    padding: 10px 20px;
+    background: @pink-color;
+    top: -452px;
+    left: 802px;
+    z-index: 30;
+  }
+}
