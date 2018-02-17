@@ -103,6 +103,11 @@
 }
 
 .social-web__copyright svg:active {
+  fill: @text-color;
+  fill-opacity: 0.3;
+}
+
+.social-web__copyright svg:active {
   fill:#bec2c7;
 }
 
@@ -114,6 +119,22 @@
   .social-web__copyright {
     padding-top: 40px;
   }
+}
+
+.social-web__tablet-svg,
+.social-web_desktop-svg {
+  fill: @text-color;
+}
+
+.social-web__tablet-svg:hover,
+.social-web_desktop-svg:hover {
+  fill: @pink-color;
+}
+
+.social-web__tablet-svg:active,
+.social-web_desktop-svg:active {
+  fill: @text-color;
+  fill-opacity: 0.5;
 }
 
 @media @desktop-widths {
@@ -160,5 +181,9 @@
   }
   .social-web__logo {
     margin-bottom: 0px;
+  }
+  .social-web__copyright span {
+    font-weight: normal;
+    font-size: 18px;
   }
 }
