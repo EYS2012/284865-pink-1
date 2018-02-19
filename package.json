@@ -1,9 +1,13 @@
 {
-  "name": "pink",
-  "version": "13.0.0",
-  "private": true,
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "dependencies": {},
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.2.x",
     "browser-sync": "2.23.x",
     "gulp": "3.9.x",
@@ -13,22 +17,9 @@
     "gulp-postcss": "7.0.x",
     "gulp-rename": "1.2.2",
     "run-sequence": "2.2.1",
-    "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint 'source/less/**/*.less' --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
   "editorconfig-cli": [
     "source/*.json",
     "source/*.js",
@@ -40,5 +31,13 @@
   "engines": {
     "node": "8.9"
   },
-  "dependencies": {}
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "editorconfig": "editorconfig-cli",
+    "start": "npm run build && gulp serve",
+    "stylelint": "stylelint 'source/less/**/*.less' --syntax less",
+    "test": "npm run editorconfig && npm run stylelint"
+  },
+  "version": "13.0.0"
 }
