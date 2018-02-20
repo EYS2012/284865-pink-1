@@ -1,5 +1,5 @@
 .menu {
-  background:#283645;
+  background: #283645;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -17,7 +17,7 @@
 }
 
 .menu__link {
-  color:white;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -29,7 +29,7 @@
 
 .menu__hidden {
   display: none;
-  background:#283645;
+  background: #283645;
 }
 
 .menu__item:nth-child(4),
@@ -40,7 +40,7 @@
 @media @desktop-widths {
   .menu__item:nth-child(3),
   .menu__item:nth-child(4) {
-  background: transparent;
+    background: transparent;
   }
 
   .menu {
@@ -51,10 +51,10 @@
     position: absolute;
     content: "";
     min-width: 800px;
-    top:0px;
     z-index: 200;
     width: 100%;
     height: 110px;
+    top: 0;
   }
 
   .menu__item {
@@ -97,16 +97,20 @@
 }
 
 .menu__link:visited {
-  color:#6a757f;
+  color: #6a757f;
 }
 
 .menu__link:hover {
-  color:#d22856;
+  color: #d22856;
+}
+
+.menu__link:active {
+  color: white;
 }
 
 @media @desktop-widths {
   .menu__link:active {
     border-bottom: 2px solid white;
-    color:white;
+    color: white;
   }
 }

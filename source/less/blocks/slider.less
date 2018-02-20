@@ -31,7 +31,7 @@
   border-radius: 50%;
   background: #bec2c7;
   cursor: pointer;
-  top:385px;
+  top: 385px;
   left: 290px;
   margin-right: 15px;
 }
@@ -53,28 +53,29 @@
 #botn-1:checked ~ .slider__controls label[for="botn-1"],
 #botn-2:checked ~ .slider__controls label[for="botn-2"],
 #botn-3:checked ~ .slider__controls label[for="botn-3"] {
-
   top: 278px;
   background: white;
   border: 3px solid #283645;
 }
 
 @media @tablet-widths {
-#botn-1:checked ~ .slider__controls label[for="botn-1"],
-#botn-2:checked ~ .slider__controls label[for="botn-2"],
-#botn-3:checked ~ .slider__controls label[for="botn-3"] {
-  top: 258px;
-  background: white;
-  border: 3px solid #283645;
-}
+  #botn-1:checked ~ .slider__controls label[for="botn-1"],
+  #botn-2:checked ~ .slider__controls label[for="botn-2"],
+  #botn-3:checked ~ .slider__controls label[for="botn-3"] {
+    top: 258px;
+    background: white;
+    border: 3px solid #283645;
+  }
 }
 
 #botn-1:checked ~ .slider__slides .slider__slide--one {
   display: block;
 }
+
 #botn-2:checked ~ .slider__slides .slider__slide--two {
   display: block;
 }
+
 #botn-3:checked ~ .slider__slides .slider__slide--three {
   display: block;
 }
@@ -149,7 +150,6 @@
   .slider__text p {
     display: flex;
     line-height: 30px;
-    margin-top: -185px;
     color: #283645;
     text-align: center;
     font-size: 18px;
@@ -160,18 +160,18 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   @media @tablet-widths {
-  .slider__text p {
-    width: 620px;
-    display: flex;
-    line-height: 30px;
-    margin-top: -195px;
-    color: #283645;
-    text-align: center;
-    font-size: 18px;
+    .slider__text p {
+      width: 620px;
+      display: flex;
+      line-height: 30px;
+      margin-top: -195px;
+      color: #283645;
+      text-align: center;
+      font-size: 18px;
+    }
   }
-}
 }
 
 @media @tablet-widths {
@@ -205,7 +205,7 @@
 
   .slider__title::before {
     position: absolute;
-    content:"";
+    content: "";
     background: url("../img/icon-review-arrow-right.svg") no-repeat;
     width: 45px;
     height: 50px;
@@ -262,14 +262,14 @@
 
   .slider__slides::before {
     position: absolute;
-    content:"";
+    content: "";
     width: 80px;
     height: 64px;
     background: url("../img/icon-quotes.svg") no-repeat 0 0;
     top: 50px;
     left: 429px;
     z-index: 10;
-    }
+  }
 
   .slider__title h2 {
     font-size: 23px;

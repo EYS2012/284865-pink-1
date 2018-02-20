@@ -45,6 +45,13 @@
 }
 
 .competition-form__checkboxes fieldset,
+.competition-form__fieldset,
+.competition-form__radio-block-fieldset,
+.competition-form__emotion-wrapper-fieldset {
+  border: none;
+}
+
+.competition-form__checkboxes fieldset,
 .competition-form__mail fieldset,
 .competition-form__radio-block fieldset,
 .competition-form__emotion-wrapper fieldset {
@@ -169,10 +176,7 @@
   }
 
   .competition-form__mail input {
-    padding-right: 218px;
     align-items: center;
-    padding: 15px 20px;
-    padding-bottom: 5px;
     padding: 18px 0;
     font-size: 18px;
     color: @text-color;
@@ -186,10 +190,7 @@
 
   .competition-form__phone input {
     margin-top: -5px;
-    padding-right: 218px;
     align-items: center;
-    padding: 15px 20px;
-    padding-bottom: 5px;
     padding: 18px 0;
     font-size: 18px;
     color: @text-color;
@@ -209,7 +210,7 @@
 
   .competition-form__phone::after {
     position: absolute;
-    content:"";
+    content: "";
     background: url("../img/icon-phone.svg") no-repeat;
     width: 20px;
     height: 20px;
@@ -224,7 +225,7 @@
 
   .competition-form__mail::after {
     position: absolute;
-    content:"";
+    content: "";
     background: url("../img/icon-mail.svg") no-repeat;
     width: 20px;
     height: 20px;
@@ -236,8 +237,6 @@
   .competition-form__phone-input:hover,
   .competition-form_mail-input:hover {
     border: 2px solid black;
-    padding: 15px 20px;
-    padding-bottom: 5px;
     padding: 18px 0;
     font-size: 18px;
     padding-left: 20px;
@@ -248,8 +247,6 @@
   .competition-form__phone-input:active,
   .competition-form_mail input:active {
     border: 2px solid @pink-color;
-    padding: 15px 20px;
-    padding-bottom: 5px;
     padding: 18px 0;
     font-size: 18px;
     padding-left: 20px;
@@ -304,8 +301,14 @@
     width: 280px;
   }
 
+  .competition-form__checkboxes fieldset {
+    border: 2px solid #e5e5e5;
+    padding: 0;
+    margin: 0;
+  }
+
   .competition-form__name input {
-  width: 256px;
+    width: 256px;
   }
 
   .competition-form__name label {
@@ -315,6 +318,8 @@
 
   .competition-form__phone {
     align-items: flex-start;
+    padding-left: 18px;
+    padding-right: 18px;
     padding-bottom: 5px;
     margin-left: 38px;
     padding-top: 0;
@@ -324,7 +329,6 @@
   .competition-form__mail {
     align-items: flex-end;
     padding-bottom: 0;
-    margin-bottom: 0;
     margin-top: -160px;
     margin-right: 40px;
     margin-bottom: 0;
@@ -395,19 +399,34 @@
   .competition-form__checkboxes {
     background: white;
   }
+
+  .competition-form__checkboxes fieldset,
+  .competition-form__fieldset,
+  .competition-form__radio-block-fieldset,
+  .competition-form__emotion-wrapper-fieldset {
+    border: 2px solid #e5e5e5;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .competition-form__checkboxes fieldset,
+  .competition-form__fieldset,
+  .competition-form__radio-block-fieldset,
+  .competition-form__emotion-wrapper-fieldset {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .competition-form__checkboxes li {
-  color:#28363f;
+  color: #28363f;
   padding-top: 10px;
   padding-bottom: 48px;
-  // padding-top: 0;
-  // padding-bottom: 58px;
   list-style-type: none;
 }
 
 .competition-form__radio-block li {
-  color:#28363f;
+  color: #28363f;
   padding-top: 25px;
   padding-bottom: 32px;
   list-style-type: none;
@@ -416,7 +435,7 @@
 .competition-form__radio-block label,
 .competition-form__checkbox-item label {
   cursor: pointer;
-  color:#28363f;
+  color: #28363f;
 }
 
 .competition-form__checkbox-item {
@@ -432,10 +451,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-fieldset {
-  border: none;
 }
 
 .competition-form__android {
@@ -487,11 +502,7 @@ fieldset {
   .competition-form__phone-input:hover,
   .competition-form_mail-input:hover {
     border: 2px solid black;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    padding: 15px 20px;
-    padding-bottom: 5px;
     padding: 18px 0;
     font-size: 18px;
     padding-left: 20px;
@@ -502,8 +513,6 @@ fieldset {
   .competition-form__phone-input:active,
   .competition-form_mail-input:active {
     align-items: center;
-    padding: 15px 20px;
-    padding-bottom: 5px;
     padding: 18px 0;
     font-size: 18px;
     padding-left: 20px;
@@ -513,7 +522,12 @@ fieldset {
   }
 
   .competition-form__fieldset {
+    padding: 0;
+    width: 936px;
     margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 2px solid #e5e5e5;
   }
 }
 
@@ -526,12 +540,10 @@ fieldset {
   text-transform: uppercase;
   font-size: 14px;
   padding-bottom: 15px;
-  // padding-bottom: 25px;
   font-weight: 400;
   display: flex;
   align-items: center;
   padding-top: 35px;
-  // padding-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
@@ -557,8 +569,7 @@ fieldset {
   content: "";
   width: 40px;
   height: 40px;
-  background: white;
-  background: url("../img/icon-yes-checkbox.svg") no-repeat;
+  background: #ffffff url("../img/icon-yes-checkbox.svg") no-repeat;
   left: 27px;
   z-index: 100;
   cursor: pointer;
@@ -568,6 +579,7 @@ fieldset {
   .competition-form__checkbox-item input[type="checkbox"]:checked ~ label::before {
     left: 60px;
   }
+
   .competition-form__checkbox-filter {
     width: 320px;
     margin-bottom: 10px;
@@ -582,7 +594,7 @@ fieldset {
   width: 35px;
   height: 35px;
   background: white;
-  border:2px solid #e6e6e6;
+  border: 2px solid #e6e6e6;
 }
 
 .competition-form__checkbox-two-label::after {
@@ -626,7 +638,7 @@ fieldset {
   width: 35px;
   height: 35px;
   background: white;
-  border:2px solid #e6e6e6;
+  border: 2px solid #e6e6e6;
 }
 
 .competition-form__checkbox-six-label::after {
@@ -665,10 +677,10 @@ fieldset {
 
 @media @tablet-widths {
   .competition-form__emotion-wrapper {
-    // padding-top: 13px;
     width: 620px;
     margin: 0 auto;
   }
+
   .competition-form__checkbox-one-label::after {
     top: 5px;
     left: 50px;
@@ -683,10 +695,12 @@ fieldset {
     top: 170px;
     left: 50px;
   }
+
   .competition-form__checkbox-four-label::after {
     top: 250px;
     left: 50px;
   }
+
   .competition-form__checkbox-five-label::after {
     top: 335px;
     left: 50px;
@@ -707,7 +721,7 @@ fieldset {
   flex-direction: column;
 }
 
-@media@tablet-widths {
+@media @tablet-widths {
   .competition-form__form-item-wrapper {
     padding-top: 12px;
   }
@@ -737,14 +751,15 @@ fieldset {
   }
 
   .competition-form__checkbox-two {
-  order: 1;
+    order: 1;
   }
 
   .competition-form__checkbox-four {
-  order: 1;
+    order: 1;
   }
+
   .competition-form__checkbox-six {
-  order: 6;
+    order: 6;
   }
 
   .competition-form__checkbox-item input[type="checkbox"]:checked ~ label::before {
@@ -798,7 +813,7 @@ fieldset {
   }
 
   .competition-form__checkboxes li {
-    color:#28363f;
+    color: #28363f;
     padding-bottom: 32px;
     list-style-type: none;
     padding-top: 3px;
@@ -836,7 +851,7 @@ fieldset {
 
   .competition-form__checkbox-six-label {
     padding-top: 25px;
-    padding-left:113px;
+    padding-left: 113px;
   }
 
   .competition-form__checkboxes-title {
@@ -854,8 +869,7 @@ fieldset {
     width: 35px;
     height: 35px;
     background: white;
-    border:2px solid #e6e6e6;
-
+    border: 2px solid #e6e6e6;
   }
 
   .competition-form__checkbox-two-label::after {
@@ -866,7 +880,7 @@ fieldset {
     width: 35px;
     height: 35px;
     background: white;
-    border:2px solid #e6e6e6;
+    border: 2px solid #e6e6e6;
   }
 
   .competition-form__checkbox-three-label::after {
@@ -877,7 +891,7 @@ fieldset {
     width: 35px;
     height: 35px;
     background: white;
-    border:2px solid #e6e6e6;
+    border: 2px solid #e6e6e6;
   }
 
   .competition-form__checkbox-four input[type="checkbox"]:checked ~ label::before {
@@ -960,7 +974,7 @@ fieldset {
     width: 35px;
     height: 35px;
     background: white;
-    border:2px solid #e6e6e6;
+    border: 2px solid #e6e6e6;
   }
 
   .competition-form__checkbox-five-label::after {
@@ -971,7 +985,7 @@ fieldset {
     width: 35px;
     height: 35px;
     background: white;
-    border:2px solid #e6e6e6;
+    border: 2px solid #e6e6e6;
   }
 
   .competition-form__checkbox-six-label::after {
@@ -982,7 +996,7 @@ fieldset {
     width: 35px;
     height: 35px;
     background: white;
-    border:2px solid #e6e6e6;
+    border: 2px solid #e6e6e6;
   }
 
   .competition-form__emotion-wrapper {
@@ -997,7 +1011,7 @@ fieldset {
   border: 2px solid #e5e5e5;
   padding: 18px 10px;
   font-size: 18px;
-  color:@text-color;
+  color: @text-color;
   padding-top: 15px;
   padding-left: 20px;
   padding-right: 10px;
@@ -1014,6 +1028,7 @@ fieldset {
     width: 465px;
     height: 155px;
   }
+
   .competition-form__checkboxes-title {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -1031,7 +1046,6 @@ fieldset {
   padding-top: 30px;
   padding-left: 40px;
   padding-right: 40px;
-
 }
 
 @media @tablet-widths {
@@ -1048,7 +1062,7 @@ fieldset {
 @media @desktop-widths {
   .competition-form__radio-block-title {
     padding-left: 25px;
-    padding-right: 25px
+    padding-right: 25px;
   }
 }
 
@@ -1057,7 +1071,6 @@ fieldset {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: lighter;
-  display: flex;
   align-items: center;
   padding-top: 25px;
   padding-left: 20px;
@@ -1070,7 +1083,7 @@ fieldset {
 .competition-form__emotion-wrapper placeholder {
   padding: 18px 0;
   font-size: 18px;
-  color:@text-color;
+  color: @text-color;
   padding-left: 20px;
   width: 256px;
   letter-spacing: 0.6px;
@@ -1099,7 +1112,7 @@ fieldset {
   margin: 0 auto;
 }
 
-  @media @tablet-widths {
+@media @tablet-widths {
   .competition-form__explanation {
     padding-right: 0;
     justify-content: flex-end;
@@ -1145,7 +1158,7 @@ fieldset {
   }
 
   .competition-form__android {
-    margin-right: 27px
+    margin-right: 27px;
   }
 
   .competition-form__Windows-Phone {
@@ -1162,19 +1175,19 @@ fieldset {
   height: 35px;
   border-radius: 50%;
   background: white;
-  border:2px solid #e6e6e6;
+  border: 2px solid #e6e6e6;
 }
 
 .competition-form__radio-filter :nth-child(1):visited::after {
-  border:2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .competition-form__radio-filter :nth-child(1):hover::after {
-  border:2px solid black;
+  border: 2px solid black;
 }
 
 .competition-form__radio-filter :nth-child(1):active::after {
-  border:2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .competition-form__android::after {
@@ -1186,19 +1199,19 @@ fieldset {
   height: 35px;
   border-radius: 50%;
   background: white;
-  border:2px solid #e6e6e6;
+  border: 2px solid #e6e6e6;
 }
 
 .competition-form__android:visited::after {
-  border:2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .competition-form__android:hover::after {
-  border:2px solid black;
+  border: 2px solid black;
 }
 
 .competition-form__android:active::after {
-  border:2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .competition-form__Windows-Phone::after {
@@ -1210,19 +1223,19 @@ fieldset {
   height: 35px;
   border-radius: 50%;
   background: white;
-  border:2px solid #e6e6e6;
+  border: 2px solid #e6e6e6;
 }
 
 .competition-form__Windows-Phone:visited::after {
-  border:2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .competition-form__Windows-Phone:hover::after {
-  border:2px solid black;
+  border: 2px solid black;
 }
 
 .competition-form__Windows-Phone:active::after {
-  border:2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 @media @tablet-widths {
@@ -1251,7 +1264,7 @@ fieldset {
   height: 15px;
   background: @pink-color;
   border-radius: 50%;
-  left:-58px;
+  left: -58px;
   z-index: 300;
   cursor: pointer;
 }
@@ -1263,9 +1276,26 @@ fieldset {
   }
 
   .competition-form__radio-block-fieldset {
+    padding-left: 0;
+    padding-right: 0;
+    border: 2px solid #e5e5e5;
     margin-left: 500px;
     margin-top: -360px;
-    width: 435px;
+    width: 430px;
+  }
+
+  .competition-form__checkboxes fieldset,
+  .competition-form__fieldset,
+  .competition-form__radio-block-fieldset,
+  .competition-form__emotion-wrapper-fieldset {
+    border: 2px solid #e5e5e5;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .competition-form__emotion-wrapper-fieldset {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .competition-form__radio-filter {
@@ -1273,32 +1303,34 @@ fieldset {
   }
 
   .competition-form__radio-item input[type="radio"]:checked ~ label::before {
-    left:-44px;
+    left: -44px;
   }
 
   .competition-form__radio-filter :nth-child(1)::after {
-    left:-56px;
+    left: -56px;
   }
+
   .competition-form__Windows-Phone::after {
-    left:-56px;
+    left: -56px;
   }
+
   .competition-form__android::after {
-    left:-56px;
+    left: -56px;
   }
+
   .competition-form__emotion-wrapper textarea {
     margin-top: -8px;
     width: 782px;
     height: 90px;
     margin-bottom: 40px;
-    padding: 18px 15px;
-
+    padding: 15px 15px;
   }
 }
 
 .competition-form__send-btn {
   padding: 21px 50px;
   background: #2aab6d;
-  color:white;
+  color: white;
   font-size: 17px;
   font-weight: bolder;
   text-transform: uppercase;
@@ -1343,17 +1375,17 @@ fieldset {
     margin: 0 auto;
   }
 
-.competition-form__send-btn {
-  padding-left: 58px;
-  padding-right: 58px;
-  margin-left: 0;
-}
+  .competition-form__send-btn {
+    padding-left: 58px;
+    padding-right: 58px;
+    margin-left: 0;
+  }
 
-.competition-form__explanation {
-  display: none;
-}
+  .competition-form__explanation {
+    display: none;
+  }
 
-.competition-form__submit-text {
+  .competition-form__submit-text {
     line-height: 14px;
     font-size: 14px;
     text-transform: uppercase;

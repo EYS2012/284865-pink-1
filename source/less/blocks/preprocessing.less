@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:100% ;
+  width: 100%;
   padding-bottom: 40px;
 }
 
@@ -30,7 +30,6 @@
   .preprocessing {
     width: auto;
     padding-top: 0;
-
   }
 
   .preprocessing__form {
@@ -124,14 +123,13 @@
 .preprocessing__scale-active {
   display: flex;
   position: absolute;
-  content:"";
+  content: "";
   width: 240px;
   height: 1px;
   top: 125px;
   left: 0;
   background: black;
   z-index: 300;
-
 }
 
 .preprocessing__scale-active::after {
@@ -143,14 +141,14 @@
   border-radius: 50%;
   border: 2px solid @pink-color;
   left: 195px;
-  top:-6px;
-
+  top: -6px;
 }
 
 @media @tablet-widths {
   .preprocessing__scale-active::after {
     left: 147px;
   }
+
   .preprocessing__icon-wrapper:nth-child(2) .preprocessing__scale {
     position: absolute;
     content: "";
@@ -166,8 +164,9 @@
     border-radius: 50%;
     border: 2px solid @pink-color;
     left: 25px;
-    top:-6px;
+    top: -6px;
   }
+
   .preprocessing__icon-wrapper:nth-child(3) .preprocessing__scale {
     position: absolute;
     content: "";
@@ -183,7 +182,7 @@
     border-radius: 50%;
     border: 2px solid @pink-color;
     left: 96px;
-    top:-6px;
+    top: -6px;
   }
 }
 
@@ -225,10 +224,12 @@
     margin-right: 20px;
     padding-bottom: 10px;
   }
+
   .preprocessing__icon-wrapper:nth-child(2) {
     padding-top: 15px;
     padding-bottom: 10px;
   }
+
   .preprocessing__icon-wrapper:nth-child(3) {
     padding-top: 15px;
     padding-bottom: 18px;
@@ -261,6 +262,7 @@
     margin-left: 15px;
     transform: scale(1);
   }
+
   .preprocessing__scale-active::after {
     left: 70px;
   }
@@ -287,9 +289,8 @@
 
 .preprocessing__icon--color {
   background: url("../img/icon-color.svg") no-repeat 0 0;
-  width:  48px;
+  width: 48px;
   height: 48px;
-
 }
 
 .preprocessing__icon--color:hover {
@@ -340,6 +341,7 @@
     margin-top: 0;
     transform: scale(1);
   }
+
   .preprocessing__icon--crop {
     transform: scale(1);
     margin-bottom: 0;
@@ -474,7 +476,7 @@
     border-radius: 50%;
     border: 2px solid @pink-color;
     left: 245px;
-    top:-6px;
+    top: -6px;
   }
 
   .preprocessing__icon-wrapper:nth-child(3) .preprocessing__scale {

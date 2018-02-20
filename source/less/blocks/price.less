@@ -1,11 +1,9 @@
 .price {
   color: white;
   width: 100%;
-  padding-top: 0;
   overflow-x: hidden;
   padding-top: 132px;
-  background: #f2f2f2
-  url("../img/bg-triangle-white.svg") no-repeat 0 -25px;
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat 0 -25px;
   padding-left: 0;
   padding-bottom: 80px;
 }
@@ -15,9 +13,7 @@
   .price {
     width: 100%;
     overflow-x: hidden;
-    width: 100%;
-    background: #f2f2f2
-    url("../img/bg-triangle-white.svg") no-repeat -2px -22px;
+    background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat -2px -22px;
     margin-top: -37px;
     padding-top: 112px;
     padding-bottom: 49px;
@@ -28,8 +24,7 @@
   .price {
     overflow-x: hidden;
     width: 100%;
-    background: #f2f2f2
-    url("../img/bg-triangle-white.svg") no-repeat -2px 0;
+    background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat -2px 0;
     margin-top: -30px;
     padding-top: 112px;
     padding-bottom: 75px;
@@ -37,17 +32,16 @@
   }
 }
 
-
-  @-moz-document url-prefix() {
-@media @tablet-widths {
-  .price {
-    padding-top: 110px;
+@-moz-document url-prefix("") {
+  @media @tablet-widths {
+    .price {
+      padding-top: 110px;
+    }
   }
-}
 }
 
 tbody {
-  min-width: 320px;
+  // min-width: 320px; sss
   min-width: 100%;
 }
 
@@ -75,8 +69,7 @@ tbody {
 }
 
 thead {
-  width: 278px;
-  width: 100%;
+  // width: 100%; sss
   background: @text-color;
   width: 278px;
 }
@@ -130,7 +123,7 @@ thead {
 
 .price__block:nth-child(3)::after {
   position: absolute;
-  content:"хит";
+  content: "хит";
   transform: rotate(-45deg);
   top: 15px;
   left: 8px;
@@ -141,7 +134,7 @@ thead {
 @media @tablet-widths {
   .price__block:nth-child(3)::after {
     position: absolute;
-    content:"хит";
+    content: "хит";
     top: 7px;
     left: 8px;
     transform: rotate(-45deg);
@@ -153,7 +146,6 @@ thead {
 .price__block:nth-child(3) {
   background: url("../img/bg-hit.svg") no-repeat 0 0;
   position: relative;
-
 }
 
 @media @tablet-widths {
@@ -161,7 +153,7 @@ thead {
     position: relative;
     background: transparent;
   }
-  }
+}
 
 
 @media @tablet-widths {
@@ -169,8 +161,8 @@ thead {
     background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
     top: 0;
     left: -1px;
-    position:absolute;
-    content:"";
+    position: absolute;
+    content: "";
     width: 100px;
     height: 70px;
   }
@@ -186,7 +178,7 @@ thead {
     border-right: @text-color;
   }
 
-    .price__block:nth-child(2) {
+  .price__block:nth-child(2) {
     border-left: @text-color;
   }
 
@@ -196,21 +188,19 @@ thead {
 }
 
 .price__cell {
-  background: white;
   padding: 20px 20px;
   width: 238px;
   text-align: left;
-  background:white url("../img/icon-yes.svg") no-repeat 238px 16px;
+  background: white url("../img/icon-yes.svg") no-repeat 238px 16px;
 }
 
 @media @tablet-widths {
   .price__cell {
-    background: white;
     padding: 12px 18px 12px 15px;
     text-align: left;
     width: 98px;
     font-size: 0;
-    background:white url("../img/icon-yes.svg") no-repeat 65px 14px;
+    background: white url("../img/icon-yes.svg") no-repeat 65px 14px;
     line-height: 21px;
   }
 
@@ -265,16 +255,16 @@ thead {
   font-size: 14px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #e5e5e5;
 }
 
 table {
   border-top: none;
-  }
+}
 
-  // стилизация слайдера
-
+// стилизация слайдера
 .price__slider {
   position: relative;
   display: block;
@@ -299,7 +289,6 @@ table {
   height: 20px;
   width: 100%;
   text-align: center;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
 }
@@ -338,9 +327,11 @@ table {
 #btn-1:checked ~ .price__slides .price__slide--one {
   display: block;
 }
+
 #btn-2:checked ~ .price__slides .price__slide--two {
   display: block;
 }
+
 #btn-3:checked ~ .price__slides .price__slide--three {
   display: block;
 }
@@ -353,7 +344,6 @@ table {
 
 @media @desktop-widths {
   .price__table {
-    margin: 0 auto;
     width: 940px;
     display: table;
     background: #e5e5e5;
@@ -364,7 +354,7 @@ table {
 
   .price__block:nth-child(3)::after {
     position: absolute;
-    content:"хит";
+    content: "хит";
     top: 7px;
     left: 8px;
     transform: rotate(-45deg);
@@ -390,14 +380,13 @@ table {
   }
 
   .price__cell {
-    background: white;
     padding: 17px 20px;
     font-size: 14px;
     font-weight: 400;
     width: 238px;
     text-transform: uppercase;
     text-align: left;
-    background:white url("../img/icon-yes.svg") no-repeat 104px 23px;
+    background: white url("../img/icon-yes.svg") no-repeat 104px 23px;
     line-height: 24px;
   }
 
@@ -412,15 +401,18 @@ table {
   .price__string:nth-child(3) .price__cell:nth-last-child(3) {
     background: white url("../img/icon-no.svg") no-repeat 105px 15px;
   }
+
   .price__cell:nth-last-child(4) {
     color: #283645;
     text-transform: none;
     font-size: 18px;
   }
+
   .price_block-transparent {
     border-left: none;
     border-top: none;
   }
+
   .price__block {
     padding: 17px 0;
   }
